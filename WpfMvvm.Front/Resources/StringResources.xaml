@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="home_title">Welcome to the WPF MVVM Template</system:String>
+    <system:String x:Key="customers_title">Customer management</system:String>
+    <system:String x:Key="customers_btnNew">New</system:String>
+    <system:String x:Key="customers_lblReference">Reference</system:String>
+    <system:String x:Key="customers_lblFirstName">First name</system:String>
+    <system:String x:Key="customers_lblLastName">Last name
+    </system:String>
+    <system:String x:Key="customers_btnEdit">Edit
+    </system:String>
+    <system:String x:Key="customers_btnAdd">Add
+    </system:String>
+    <system:String x:Key="customers_btnDelete">Delete</system:String>
+</ResourceDictionary>
