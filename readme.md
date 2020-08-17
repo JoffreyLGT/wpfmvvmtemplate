@@ -1,5 +1,7 @@
 # WPF MVVM Template
 
+![Screenshot of the app](./screenshot.png)
+
 ## 🎯 Goal
 
 Provide a template to start a new WPF project using the MVVM architecture pattern.
