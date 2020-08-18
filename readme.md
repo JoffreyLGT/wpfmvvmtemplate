@@ -22,8 +22,13 @@ Contains all the business rules and the business objects.
 ### WpfMvvm.Data
 
 Contains the logic to manage the data.  
-Currently, only in memory data storage is available.  
-However, the solution is decoupled and allow you to easily add any extra method.
+There are 2 ways to store data:
+
+- In memory: the app is storing data temporary ; everything is lost when the app is closed.
+- SQLite database: the data persistent ; it is stored in customer.db.
+
+You can choose which method to use in the file `WpfMvvm.Front\ContainerHelper.cs`.  
+Feel free to add any other method by implementing `ICustomerRepository`.
 
 ### WpfMvvm.Front
 
