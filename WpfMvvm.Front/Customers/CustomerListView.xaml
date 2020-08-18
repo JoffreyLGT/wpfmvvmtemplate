@@ -8,9 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="850"
              utils:MvvmBehaviors.LoadedMethodName="LoadCustomers">
-    <!--<UserControl.DataContext>
-        <local:CustomerListViewModel />
-    </UserControl.DataContext>-->
     <UserControl.Resources>
         <utils:NegatableBooleanToVisibilityConverter
             x:Key="VisConverter" />

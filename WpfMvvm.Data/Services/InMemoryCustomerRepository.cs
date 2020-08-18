@@ -26,11 +26,6 @@ namespace WpfMvvm.Data.Services
             return Task.Run(() => customers.Remove(customers.Find(c => c.Id == customerId)));
         }
 
-        public void EnsureDatabaseCreated()
-        {
-            // Do nothing since we are working in memory.
-        }
-
         public Task<Customer> GetCustomerAsync(int id)
         {
             throw new NotImplementedException();
@@ -44,7 +39,7 @@ namespace WpfMvvm.Data.Services
         public Task<Customer> UpdateCustomerAsync(Customer customer)
         {
             var i = customers.FindIndex(cust => cust.Id == customer.Id);
-            customers[i] = new Customer(customer);
+            customers[i].CopyFromCustomer(customer);
             return Task.Run(() => customers[i]);
         }
     }

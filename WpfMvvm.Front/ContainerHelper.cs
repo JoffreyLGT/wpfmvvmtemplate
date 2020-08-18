@@ -13,8 +13,9 @@ namespace WpfMvvm.Front
         static ContainerHelper()
         {
             container = new UnityContainer();
-            container.RegisterType<ICustomerRepository, InMemoryCustomerRepository>(
-                new ContainerControlledLifetimeManager());
+            // Choose here if you want to use InMemoryDB or SQLite
+            // container.RegisterType<ICustomerRepository, InMemoryCustomerRepository>(new ContainerControlledLifetimeManager());
+            container.RegisterType<ICustomerRepository, SQLiteCustomerRepository>(new ContainerControlledLifetimeManager());
         }
 
         public static IUnityContainer Container

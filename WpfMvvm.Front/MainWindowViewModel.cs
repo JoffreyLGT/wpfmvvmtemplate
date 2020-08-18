@@ -20,7 +20,6 @@ namespace WpfMvvm.Front
             repository = ContainerHelper.Container.Resolve<ICustomerRepository>();
 
             currentViewModel = homeViewModel;
-            repository.EnsureDatabaseCreated();
         }
 
         private BindableBase currentViewModel;

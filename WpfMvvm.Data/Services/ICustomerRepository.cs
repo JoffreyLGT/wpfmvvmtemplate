@@ -14,6 +14,5 @@ namespace WpfMvvm.Data.Services
         Task<Customer> AddCustomerAsync(Customer customer);
         Task<Customer> UpdateCustomerAsync(Customer customer);
         Task DeleteCustomerAsync(int customerId);
-        void EnsureDatabaseCreated();
     }
 }

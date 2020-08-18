@@ -1,4 +1,5 @@
-﻿using WpfMvvm.Front.MvvmUtils;
+﻿using WpfMvvm.Business.Models;
+using WpfMvvm.Front.MvvmUtils;
 
 namespace WpfMvvm.Front.Home
 {
@@ -6,7 +7,7 @@ namespace WpfMvvm.Front.Home
     {
         public HomeViewModel()
         {
-  
+            
         }
     }
 }
