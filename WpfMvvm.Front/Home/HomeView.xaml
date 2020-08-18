@@ -6,9 +6,6 @@
              xmlns:local="clr-namespace:WpfMvvm.Front.Home"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.DataContext>
-        <local:HomeViewModel />
-    </UserControl.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />

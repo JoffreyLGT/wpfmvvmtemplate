@@ -10,7 +10,6 @@ namespace WpfMvvm.Front.Customers
     public class CustomerListViewModel : BindableBase
     {
         // Repository where the data is stored
-        //private readonly ICustomerRepository repository = new InMemoryCustomerRepository();
         private readonly ICustomerRepository repository;
 
         public CustomerListViewModel(ICustomerRepository repository)

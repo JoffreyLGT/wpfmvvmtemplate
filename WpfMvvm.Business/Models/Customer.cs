@@ -15,6 +15,7 @@ namespace WpfMvvm.Business.Models
         public string LastName { get; set; }
 
         public Customer(){}
+
         public Customer(Customer toCopy)
         {
             if (toCopy == null) return;
@@ -22,6 +23,19 @@ namespace WpfMvvm.Business.Models
             Reference = toCopy.Reference;
             FirstName = toCopy.FirstName;
             LastName = toCopy.LastName;
+        }
+
+        /// <summary>
+        /// Copy the content of the provided customer to this instance.
+        /// </summary>
+        /// <param name="customerToCopy"></param>
+        public void CopyFromCustomer(Customer customerToCopy)
+        {
+            if (customerToCopy == null) return;
+            Id = customerToCopy.Id;
+            Reference = customerToCopy.Reference;
+            FirstName = customerToCopy.FirstName;
+            LastName = customerToCopy.LastName;
         }
     }
 }
